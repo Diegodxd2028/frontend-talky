@@ -5,7 +5,7 @@ export interface JargonResponse {
   nivel_urgencia: 'baja' | 'media' | 'alta';
 }
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from './api.service';
 
 export const textService = {
   async traducirJargon(texto: string, areaOficio: string = 'TI'): Promise<JargonResponse> {

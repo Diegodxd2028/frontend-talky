@@ -5,7 +5,7 @@ export interface ImageExplainResponse {
   nivel_urgencia: 'baja' | 'media' | 'alta';
 }
 
-const API_BASE_URL = 'http://localhost:8000';
+import { API_BASE_URL } from './api.service';
 
 export const imageService = {
   async traducirImagen(file: File, areaOficio: string = 'TI'): Promise<ImageExplainResponse> {

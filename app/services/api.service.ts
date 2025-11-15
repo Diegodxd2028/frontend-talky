@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'https://talky-backend-p4z6.onrender.com';

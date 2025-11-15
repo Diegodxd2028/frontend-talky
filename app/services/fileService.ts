@@ -7,8 +7,7 @@ export interface FileExplainResponse {
   nivel_urgencia: 'baja' | 'media' | 'alta';
 }
 
-const API_BASE_URL = 'http://localhost:8000';
-
+import { API_BASE_URL } from './api.service';
 export const fileService = {
   async traducirArchivo(file: File, areaOficio: string = 'TI'): Promise<FileExplainResponse> {
     const formData = new FormData();

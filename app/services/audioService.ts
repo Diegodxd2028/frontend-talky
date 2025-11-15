@@ -1,3 +1,5 @@
+import { API_BASE_URL } from './api.service';
+
 export interface ExplainResponse {
   nombre_archivo: string;
   mime_type: string;
@@ -7,7 +9,6 @@ export interface ExplainResponse {
   nivel_urgencia: 'baja' | 'media' | 'alta';
 }
 
-const API_BASE_URL = 'http://localhost:8000';
 
 export const audioService = {
   /**
